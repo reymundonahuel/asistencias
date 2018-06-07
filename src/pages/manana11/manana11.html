@@ -1,0 +1,14 @@
+
+<ion-header><ion-navbar><ion-title>1º 1º</ion-title></ion-navbar></ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let note of notes" (click)="subir(note)" >
+      {{ note.name }}
+    </button>
+  </ion-list>
+
+
+</ion-content>
+<button ion-item (click)="subir()" block >Añadir</button>

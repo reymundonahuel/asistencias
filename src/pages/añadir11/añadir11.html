@@ -1,0 +1,43 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Añadir alumno</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+   <ion-item>
+     <ion-label fixed>Nombre y apellido</ion-label>
+     <ion-input type="text" [(ngModel)]="note.name"></ion-input>
+   </ion-item>
+ </ion-list>
+ <ion-item>
+  <ion-label>1/2 A</ion-label>
+  <ion-checkbox color="green" checked="false"></ion-checkbox>
+</ion-item>
+<ion-item>
+ <ion-label>1/2 T</ion-label>
+ <ion-checkbox color="green" checked="false"></ion-checkbox>
+</ion-item>
+<ion-item>
+ <ion-label>1/4 A</ion-label>
+ <ion-checkbox color="green" checked="false"></ion-checkbox>
+</ion-item>
+<ion-item>
+ <ion-label>AA A</ion-label>
+ <ion-checkbox color="green" checked="false"></ion-checkbox>
+</ion-item>
+<ion-item>
+ <ion-label>AA T</ion-label>
+ <ion-checkbox color="green" checked="false"></ion-checkbox>
+</ion-item>
+ <div padding>
+   <button ion-button color="primary" block (click)="createNote()" >Añadir</button>
+ </div>
+
+
+</ion-content>
